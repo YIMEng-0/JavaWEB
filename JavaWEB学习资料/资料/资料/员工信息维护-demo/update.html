@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<html>
+  <head>
+    <title>修改员工</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+  </head>
+  
+  <body>
+    <form action="list.html" method="post">
+		<table>
+			<tr>
+				<td>员工编号</td>
+				<td><input type="text" name="empno" value="7369" readonly></td>
+			</tr>
+			<tr>
+				<td>员工姓名</td>
+				<td><input type="text" name="ename" value="SMITH"></td>
+			</tr>
+			<tr>
+				<td>岗位</td>
+				<td><input type="text" name="job" value="CLERK"></td>
+			</tr>
+			<tr>
+				<td>月薪</td>
+				<td><input type="text" name="sal" value="800.0"></td>
+			</tr>
+			<tr>
+				<td>津贴</td>
+				<td><input type="text" name="comm" value="0"></td>
+			</tr>
+			<tr>
+				<td>入职日期</td>
+				<td><input type="text" name="hiredate" value="1980-11-11"></td>
+			</tr>
+			<tr>
+				<td>领导</td>
+				<td>
+					<select name="mgr">
+						<option>FORD</option>
+						<option selected>KING</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>部门</td>
+				<td>
+					<select name="deptno">
+						<option>OPERATION</option>
+						<option selected>SALES</option>
+					</select>
+				</td>
+			</tr>
+		</table>
+    	<input type="submit" value="更新">
+    </form>
+  </body>
+</html>
