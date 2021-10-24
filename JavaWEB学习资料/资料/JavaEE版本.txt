@@ -1,0 +1,40 @@
+
+1、什么是JavaEE?
+	- Java Enterprice Edition
+	- Java企业版
+	- 又一套新的类库
+	- SUN公司为java程序员准备一套类库，这套类库可以协助java程序员完成企业级开发
+	- 企业级开发：开发的软件是专门为企业内部使用的，线下的。当然也会遇到线上的项目
+
+2、JavaEE-API?
+	- Java企业级开发类库【应用程序编程接口】
+	- API源码
+	- API字节码
+	- API帮助文档
+
+3、JavaEE版本号?
+	- 我们学习的是javaEE5这个版本
+	- 目前JAVAEE最高版本是JAVAEE7
+	- JavaSE目前最高版本是JavaSE8
+
+4、JavaEE有哪些子规范?
+	- JDBC【虽然在javase的帮助文档中，但是属于JAVAEE规范】
+	- Servlet
+	- JSP
+	- JTA
+	- JPA
+	- JMS
+	- JNDI
+	.....................
+
+	共13个大的子规范,子规范下还有其它的子规范....
+
+5、JavaEE版本和对应的子规范的版本号?
+	- JavaEE5 对应的Servlet版本号是: Servlet2.5 
+	- JavaEE6 对应的Servlet版本号是：Servlet3.0
+	- 目前我们学习的是JavaEE5，所以学习的Servlet是Servlet2.5版本
+
+6、我们即将使用一个apache的服务器，名字叫做：Tomcat
+	- Tomcat服务器实现了Servlet和jsp规范
+	- Tomcat6实现了Servlet2.5规范
+	- Tomcat7实现了Servlet3.0规范

@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<html>
+  <head>
+    <title>新增员工</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+  </head>
+  
+  <body>
+    <form action="list.html" method="post">
+		<table>
+			<tr>
+				<td>员工编号</td>
+				<td><input type="text" name="empno"></td>
+			</tr>
+			<tr>
+				<td>员工姓名</td>
+				<td><input type="text" name="ename"></td>
+			</tr>
+			<tr>
+				<td>岗位</td>
+				<td><input type="text" name="job"></td>
+			</tr>
+			<tr>
+				<td>月薪</td>
+				<td><input type="text" name="sal"></td>
+			</tr>
+			<tr>
+				<td>津贴</td>
+				<td><input type="text" name="comm"></td>
+			</tr>
+			<tr>
+				<td>入职日期</td>
+				<td><input type="text" name="hiredate"></td>
+			</tr>
+			<tr>
+				<td>领导</td>
+				<td>
+					<select name="mgr">
+						<option>FORD</option>
+						<option>KING</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>部门</td>
+				<td>
+					<select name="deptno">
+						<option>OPERATION</option>
+						<option>SALES</option>
+					</select>
+				</td>
+			</tr>
+		</table>
+    	<input type="submit" value="保存">
+    </form>
+  </body>
+</html>
