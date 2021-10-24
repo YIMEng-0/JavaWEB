@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5" >
+	<servlet>
+		<servlet-name>save</servlet-name>
+		<servlet-class>com.bjpowernode.crm.web.action.SaveCustomerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>save</servlet-name>
+		<url-pattern>/save</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>list</servlet-name>
+		<servlet-class>com.bjpowernode.crm.web.action.ListCustomerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>list</servlet-name>
+		<url-pattern>/list</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>delete</servlet-name>
+		<servlet-class>com.bjpowernode.crm.web.action.DeleteCustomerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>delete</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+	
+	
+</web-app>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	
+	<servlet>
+		<servlet-name>accessMySelfSession</servlet-name>
+		<servlet-class>com.bjpowernode.javaweb.servlet.AccessMySelfSessionServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>accessMySelfSession</servlet-name>
+		<url-pattern>/user/accessMySelfSession</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>getDataFromSession</servlet-name>
+		<servlet-class>com.bjpowernode.javaweb.servlet.GetDataFromSessionServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>getDataFromSession</servlet-name>
+		<url-pattern>/user/getDataFromSession</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>logout</servlet-name>
+		<servlet-class>com.bjpowernode.javaweb.servlet.LogoutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>logout</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	
+	
+	<session-config>
+		<session-timeout>120</session-timeout>
+	</session-config>
+</web-app>

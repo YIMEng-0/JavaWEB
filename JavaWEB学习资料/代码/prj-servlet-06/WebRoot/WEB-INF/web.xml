@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	
+	<!-- 上下文参数，这些配置信息自动被封装到ServletContext对象中 -->
+	<!-- web.xml文件在服务器启动阶段被解析，ServletContext对象也是在服务器启动阶段被创建 -->
+	<context-param>
+		<param-name>username</param-name>
+		<param-value>zhangsan</param-value>
+	</context-param>
+	<context-param>
+		<param-name>password</param-name>
+		<param-value>123</param-value>
+	</context-param>
+	
+	<servlet>
+		<servlet-name>t1</servlet-name>
+		<servlet-class>com.bjpowernode.javaweb.servlet.TestServletContext1</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>t1</servlet-name>
+		<url-pattern>/test1</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>t2</servlet-name>
+		<servlet-class>com.bjpowernode.javaweb.servlet.TestServletContext2</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>t2</servlet-name>
+		<url-pattern>/test2</url-pattern>
+	</servlet-mapping>
+</web-app>

@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<html>
+  <head>
+    <title>save.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+  </head>
+  
+  <body>
+    
+    <form action="/prj-servlet-11/user/save" method="post">
+    	用户名
+    		<input type="text" name="username">
+    		<br>
+    	密码
+    		<input type="password" name="password">
+    		<br>
+    	性别
+    		男<input type="radio" name="sex" value="m">
+    		女<input type="radio" name="sex" value="f">
+    		<br>
+    	爱好
+    		<input type="checkbox" name="interest" value="sport">运动
+    		<input type="checkbox" name="interest" value="music">音乐
+    		<input type="checkbox" name="interest" value="food">美食
+    		<input type="checkbox" name="interest" value="dance">跳舞
+    		<input type="checkbox" name="interest" value="sleep">睡觉
+    		<br>
+    	学历
+    		<select name="grade">
+    			<option value="gz">高中</option>
+    			<option value="dz">大专</option>
+    			<option value="db">大本</option>
+    			<option value="ss">硕士</option>
+    		</select>
+    		<br>
+    	简介
+    		<textarea rows="10" cols="60" name="introduce"></textarea>
+    		<br>
+    	<input type="submit" value="保存">
+    	<input type="reset" value="重置">
+    	
+    </form>
+    
+  </body>
+</html>

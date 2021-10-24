@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+  version="3.0">
+ 
+	<!--
+		1¡¢web.xmlÎÄ¼þµÄÃû³ÆÊÇ¹æ·¶ÖÐ¹æ¶¨µÄ
+		2¡¢web.xmlÎÄ¼þµÄ´æ·ÅÎ»ÖÃÊÇ¹æ·¶ÖÐ¹æ¶¨µÄ
+		3¡¢web.xmlÎÄ¼þÖÐ±àÐ´µÄ±êÇ©ÅäÖÃÐÅÏ¢Ò²ÊÇ¹æ·¶ÖÐ¹æ¶¨µÄ
+		½áÂÛ£ºÃ»ÓÐÎªÊ²Ã´£¡Ö»ÐèÒª¼ÇÒä
+
+		4¡¢web.xmlÎÄ¼þÒ»¸öwebappÖ»ÓÐÒ»¸öÕâÑùµÄÎÄ¼þ
+		5¡¢web.xmlÎÄ¼þÔÚweb·þÎñÆ÷tomcatÆô¶¯µÄÊ±ºò±»½âÎö
+		ÈôÕâ¸öÎÄ¼þÖÐµÄ±êÇ©³öÎÊÌâ£¬·þÎñÆ÷Tomcat¿ÉÒÔÆô¶¯£¬
+		µ«ÊÇµ±Ç°µÄwebappÆô¶¯Ê§°Ü
+	-->
+
+	<servlet>
+		<servlet-name>helloServlet</servlet-name>
+		<servlet-class>HelloServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<!--servlet-nameËæÒâ£¬Ö»Òª±£³ÖÁ½¸öservlet-nameÏàÍ¬¼´¿É-->
+		<servlet-name>helloServlet</servlet-name>
+		<!--ÒÔÏÂÂ·¾¶±ØÐëÒÔ¡°/¡±¿ªÊ¼£¬µ«ÊÇ²»ÐèÒª¼ÓÏîÄ¿Ãû-->
+		<url-pattern>/hello</url-pattern>
+		<!--url-pattern¿ÉÒÔ±àÐ´¶à¸ö-->
+		<url-pattern>/fdas/fd/sa/fd/sa/fd/sa/fd/sa/fd/sa/fdsa</url-pattern>
+	</servlet-mapping>
+
+</web-app>

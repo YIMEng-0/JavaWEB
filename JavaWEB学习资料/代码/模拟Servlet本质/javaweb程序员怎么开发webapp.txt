@@ -1,0 +1,8 @@
+
+1、不需要再编写main方法，main方法在Tomcat服务器中
+Tomcat服务器启动就是main方法执行
+
+2、编写一个Servlet类实现Servlet接口，实现service方法
+
+3、将Servlet类和请求路径绑定在一起，编写web.xml文件
+

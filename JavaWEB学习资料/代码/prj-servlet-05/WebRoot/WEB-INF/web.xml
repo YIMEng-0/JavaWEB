@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	
+	<servlet>
+		<servlet-name>test1</servlet-name>
+		<servlet-class>com.bjpowernode.javaweb.servlet.TestServletConfig1</servlet-class>
+		
+		<!-- 初始化参数 -->
+		<!-- 初始化参数可以被自动封装到ServletConfig对象中 -->
+		<init-param>
+			<param-name>driver</param-name>
+			<param-value>com.mysql.jdbc.Driver</param-value>
+		</init-param>
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:mysql://localhost:3366/bjpowernode</param-value>
+		</init-param>
+		<init-param>
+			<param-name>user</param-name>
+			<param-value>root</param-value>
+		</init-param>
+		<init-param>
+			<param-name>password</param-name>
+			<param-value>123</param-value>
+		</init-param>
+		
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>test1</servlet-name>
+		<url-pattern>/test1</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>test2</servlet-name>
+		<servlet-class>com.bjpowernode.javaweb.servlet.TestServletConfig2</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>test2</servlet-name>
+		<url-pattern>/test2</url-pattern>
+	</servlet-mapping>
+</web-app>

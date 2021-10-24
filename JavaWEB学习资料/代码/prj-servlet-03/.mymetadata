@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="prj-servlet-03"
+  id="myeclipse.1454052885295"
+  context-root="/prj-servlet-03"
+  j2ee-spec="5.0"
+  archive="prj-servlet-03.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
